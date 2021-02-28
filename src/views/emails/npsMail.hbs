@@ -1,0 +1,146 @@
+<style>
+    .container {
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 160px;
+    }
+
+    .value {
+        padding: 10px;
+        margin: 5px;
+        background: #8257e6;
+        color: #fff;
+        border-radius: 6px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .cardValue {
+        background-color: #5634a5;
+        width: 450px;
+        height: 120px;
+        border-radius: 20px;
+
+    }
+
+    .level {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .answers {
+        width: 350px;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .card1 {
+        padding: 10px;
+        margin: 5px;
+        background: #8257e6;
+        color: #fff;
+        border-radius: 6px;
+        width: 55px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    .card2 {
+        padding: 10px;
+        margin: 5px;
+        background: #8257e6;
+        color: #fff;
+        border-radius: 6px;
+        width: 55px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .card3 {
+        padding: 10px;
+        margin: 5px;
+        background: #5634a5;
+        color: #5634a5;
+        border-radius: 6px;
+        width: 55px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    .title {
+        font-weight: bold;
+        color: #DDD9CE
+    }
+
+    .description {
+        margin-bottom: 20px;
+        color: #DDD9CE
+    }
+
+    .wrapper {
+        background-color: #212020;
+    }
+
+    .welcome {
+        color: #DDD9CE;
+        margin-top: 15px;
+    }
+</style>
+<div class="wrapper">
+    <div class="container">
+        <label class="welcome">Olá <strong>{{name}}</strong>! Tudo bem?</label>
+
+        <h2 class="title">{{title}}</h2>
+        <br />
+        <strong class="description">{{description}}</strong>
+
+
+
+        <div class="cardValue">
+
+            <div class="level">
+                <span class="card1">Pouco Provável</span>
+                <span class="card3">Muito Provável</span>
+                <span class="card2">Muito Provável</span>
+            </div>
+
+            <div class="answers">
+                <a class="value" href="{{link}}/1?u={{id}}">1</a>
+                <a class="value" href="{{link}}/2?u={{id}}">2</a>
+                <a class="value" href="{{link}}/3?u={{id}}">3</a>
+                <a class="value" href="{{link}}/4?u={{id}}">4</a>
+                <a class="value" href="{{link}}/5?u={{id}}">5</a>
+                <a class="value" href="{{link}}/6?u={{id}}">6</a>
+                <a class="value" href="{{link}}/7?u={{id}}">7</a>
+                <a class="value" href="{{link}}/8?u={{id}}">8</a>
+                <a class="value" href="{{link}}/9?u={{id}}">9</a>
+                <a class="value" href="{{link}}/10?u={{id}}">10</a>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <strong style="color: #DDD9CE;">Sua opinião é muito importante para nós</strong>
+        <h3 style="color: #DDD9CE">Equipe | NLW</h3>
+    </div>
+</div>
